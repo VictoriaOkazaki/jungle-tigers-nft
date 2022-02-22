@@ -1,0 +1,32 @@
+html,
+body {
+	height: 100%;
+	// overflow-x: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	background-color: $background-color;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.container-broad{
+	margin: 0 140px;
+}
+
+.marked-word {
+	color: #33E9E9;
+	background: none;
+}
