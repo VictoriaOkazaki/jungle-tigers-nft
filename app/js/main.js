@@ -31,3 +31,25 @@ const accordeon = () => {
 };
 
 accordeon();
+
+const scroll = () => {
+    const headerLinks = document.querySelectorAll('.header__menu-item a');
+
+    headerLinks.forEach((element) => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const id = element.getAttribute('href').substring(1);
+            const section = document.getElementById(id);
+
+            if (section) {
+                section.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                })
+            }
+        });
+    });
+};
+
+scroll();

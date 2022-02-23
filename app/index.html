@@ -15,58 +15,64 @@
 <body>
   <div class="wrapper">
     <main class="main">
-      <section class="home">
-        <div class="container-broad">
-          <header class="header">
-            <img class="logo" src="images/logo.svg" alt="METAJUNGLES LOGO">
-            <ul class="header__menu-list">
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#project">Project</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#collection">Collection</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#rarity">Rarity</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#roadmap">Roadmap</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#team">Team</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#faq">FAQ</a>
-              </li>
-            </ul>
-            <img class="header__btn-img" src="images/header-btn.svg" alt="button">
-          </header>
-        </div>
-        <div class="container">
-          <div class="home__animals-images">
-            <img class="home__animals-img home__animals-img-1" src="images/animal-1.png" alt="animal image">
-            <img class="home__animals-img home__animals-img-2" src="images/animal-2.png" alt="animal image">
-            <img class="home__animals-img home__animals-img-3" src="images/animal-3.png" alt="animal image">
-            <div class="home__shadow"></div>
+      <div class="home-wrapper">
+        <section class="home">
+          <div class="container-broad">
+            <header class="header">
+              <h3 class="logo">METAJUNGLES</h3>
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#project">Project</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#collection">Collection</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#rarity">Rarity</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#roadmap">Roadmap</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#team">Team</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#faq">FAQ</a>
+                </li>
+              </ul>
+              <img class="header__btn-img" src="images/header-btn.svg" alt="button">
+            </header>
           </div>
+          <div class="container">
+            <div class="home__animals-images">
+              <img class="home__animals-img home__animals-img-1" src="images/animal-1.png" alt="animal image">
+              <img class="home__animals-img home__animals-img-2" src="images/animal-2.png" alt="animal image">
+              <img class="home__animals-img home__animals-img-3" src="images/animal-3.png" alt="animal image">
+              <!-- <div class="home__shadow"></div> -->
+            </div>
+          </div>
+        </section>
+        <div class="home-container">
           <div class="home__bottom">
             <h1 class="home__title">JUNGLE TIGERS <br> NFT COLLECTION</h1>
             <img class="home__stickers" src="images/home-stickers.svg" alt="stickers">
           </div>
         </div>
-      </section>
-      <section class="project">
+      </div>
+      <section class="project" id="project">
         <div class="container-broad">
           <div class="project__video-box">
-            <video class="project__video" src="" controls></video>
+            <video class="project__video" src="" controls preload="metadata"></video>
           </div>
+        </div>
+        <div class="container">
           <div class="project__description">
             <p class="project__description-text">We are creating a metaverse in the form of a jungle of animals, in which different classes live. You will need to look for <mark class="marked-word"> offspring </mark> and extract resources, seize foreign lands and protect, pump and <mark class="marked-word"> breed them </mark> in order to sell or stake. We will have a whole series of nft animals — tigers, monkeys, rhinoceroses, snakes, crocodiles, giraffes, elephants, birds and others — this is an exciting jungle <mark class="marked-word"> metacapture!</mark></p>
-            <a class="project__description-btn" href="#"></a>
+            <img class="project__description-btn" src="images/mint-btn.svg">
           </div>
         </div>
       </section>
-      <section class="collection">
+      <section class="collection" id="collection">
         <div class="container-fluid">
           <div class="collection__slider">
             <div class="collection__slider-track">
@@ -132,7 +138,7 @@
           </div> 
         </div>
       </section>
-      <section class="rarity">
+      <section class="rarity" id="rarity">
         <div class="container">
           <div class="rarity-top">
             <h2 class="rarity__title">RARITY</h2>
@@ -193,7 +199,7 @@
           </div>
         </div>
       </div>
-      <section class="roadmap">
+      <section class="roadmap" id="roadmap">
         <div class="container">
           <h2 class="roadmap__title">ROADMAP</h2>
           <div class="roadmap__box">
@@ -227,9 +233,12 @@
               </div>
             </div>
             
-            <div class="roadmap-container roadmap__right">
+            <div class="roadmap-container roadmap-container-4 roadmap__right">
               <div class="roadmap__content roadmap__content-right">
-                <h3 class="roadmap__content-title">STAGE 4</h3>
+                <div class="roadmap__content-4">
+                  <h3 class="roadmap__content-title roadmap__content-title-4">STAGE 4</h3>
+                  <label class="roadmap__content-label">CURRENT</label>
+                </div>
                 <ul class="roadmap__list">
                   <li class="roadmap__item">• Launch of the coinage collection</li>
                   <li class="roadmap__item">• Development of subsequent animals</li>
@@ -242,13 +251,13 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="team">
         <div class="container">
           <h2 class="team-title">TEAM</h2>
           <div class="team-founders">
             <ul class="team-founders__list">
               <li class="team__item">
-                <img class="team__img" src="images/team/team-1.png" alt="animal image">
+                <img class="team__img team__img-1" src="images/team/team-1.png" alt="animal image">
                 <h3 class="team__title">VLAD</h3>
                 <p class="team__text">Co-founder</p>
                 <ul class="team-social__list">
@@ -265,7 +274,7 @@
                 </ul>
               </li>
               <li class="team__item">
-                <img class="team__img" src="images/team/team-2.png" alt="animal image">
+                <img class="team__img team__img-2" src="images/team/team-2.png" alt="animal image">
                 <h3 class="team__title">OLEG</h3>
                 <p class="team__text">Co-founder</p>
                 <ul class="team-social__list">
@@ -329,7 +338,7 @@
           </div>
         </div>
       </section>
-      <section class="faq">
+      <section class="faq" id="faq">
         <div class="container-broad">
           <h2 class="faq__main-title">FREQUENTLY ASKED QUESTIONS</h2>
           <div class="faq__box">
@@ -363,16 +372,16 @@
           <img class="logo" src="images/logo.svg" alt="METAJUNGLES LOGO">
           <ul class="footer-contacts__list">
             <li class="footer-contacts__item">
-              <a class="footer-contacts__link" href="#">Telegram</a>
+              <a class="footer-contacts__link" href="https://t.me/metajungles" target="_blank">Telegram</a>
             </li>
             <li class="footer-contacts__item">
-              <a class="footer-contacts__link" href="#">Instagram</a>
+              <a class="footer-contacts__link" href="https://instagram.com/metajungles/" target="_blank">Instagram</a>
             </li>
             <li class="footer-contacts__item">
-              <a class="footer-contacts__link" href="#">Discord</a>
+              <a class="footer-contacts__link" href="https://discord.gg/qRWnRPX5Qb" target="_blank">Discord</a>
             </li>
             <li class="footer-contacts__item">
-              <a class="footer-contacts__link" href="#">Twitter</a>
+              <a class="footer-contacts__link" href="https://twitter.com/metajungles" target="_blank">Twitter</a>
             </li>
           </ul>
         </div>
@@ -391,7 +400,6 @@
       </div>
     </footer>
   </div>
-
 
   <script src="js/main.min.js"></script>
 </body>
