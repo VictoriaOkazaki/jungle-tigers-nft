@@ -1,3 +1,14 @@
+if ($(window).width() < 500) {
+    var sticker = document.querySelector('.home__stickers');
+    var firstAnimal = document.querySelector('.home__animals-img-1');
+    var lastAnimal = document.querySelector('.home__animals-img-3');
+    var currentStage = document.querySelector('.roadmap__content-label');
+    sticker.remove();
+    firstAnimal.remove();
+    lastAnimal.remove();
+    currentStage.remove();
+ }
+
 const accordeon = () => {
     const chItems = document.querySelectorAll('.faq__item');
 
