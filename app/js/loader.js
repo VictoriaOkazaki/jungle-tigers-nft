@@ -20,7 +20,7 @@ function hideLoader() {
 function incrementImgCounter() {
     counter++;
     if (counter === len) {
-        setTimeout(hideLoader, 5000);
-        // hideLoader();
+        // setTimeout(hideLoader, 5000);
+        hideLoader();
     }
 }
