@@ -20,5 +20,8 @@
     "jquery": "^3.6.0",
     "sass": "^1.48.0",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
   }
 }

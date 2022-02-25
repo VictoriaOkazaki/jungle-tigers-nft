@@ -19,27 +19,36 @@
         <section class="home">
           <div class="container-broad">
             <header class="header">
-              <h3 class="logo">METAJUNGLES</h3>
-              <ul class="header__menu-list">
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#project">Project</a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#collection">Collection</a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#rarity">Rarity</a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#roadmap">Roadmap</a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#team">Team</a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#faq">FAQ</a>
-                </li>
-              </ul>
+              <div class="header__wrapper">
+                <button class="burger">
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                </button>
+                <h3 class="logo">METAJUNGLES</h3>
+              </div>
+              <nav class="header__menu">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#project">Project</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#collection">Collection</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#rarity">Rarity</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#roadmap">Roadmap</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#team">Team</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
               <img class="header__btn-img" src="images/header-btn.svg" alt="button">
             </header>
           </div>
@@ -48,7 +57,6 @@
               <img class="home__animals-img home__animals-img-1" src="images/animal-1.png" alt="animal image">
               <img class="home__animals-img home__animals-img-2" src="images/animal-2.png" alt="animal image">
               <img class="home__animals-img home__animals-img-3" src="images/animal-3.png" alt="animal image">
-              <!-- <div class="home__shadow"></div> -->
             </div>
           </div>
         </section>
@@ -61,8 +69,10 @@
       </div>
       <section class="project" id="project">
         <div class="container-broad">
-          <div class="project__video-box">
-            <video class="project__video" src="" controls preload="metadata"></video>
+          <div class="project__video-wrapper">
+            <div class="project__video-box">
+              <video class="project__video" src="video/tigers-nft.MP4" controls preload="metadata"></video>
+            </div>
           </div>
         </div>
         <div class="container">
@@ -207,8 +217,8 @@
               <div class="roadmap__content roadmap__content-left">
                 <h3 class="roadmap__content-title">STAGE 1</h3>
                 <ul class="roadmap__list">
-                  <li class="roadmap__item">The birth of an idea •</li>
-                  <li class="roadmap__item">Team search •</li>
+                  <li class="roadmap__item">The birth of an idea <span class="roadmap__item-dot">•</span></li>
+                  <li class="roadmap__item">Team search <span class="roadmap__item-dot">•</span></li>
                 </ul>
               </div>
             </div>
@@ -216,8 +226,8 @@
               <div class="roadmap__content roadmap__content-right">
                 <h3 class="roadmap__content-title">STAGE 2</h3>
                 <ul class="roadmap__list">
-                  <li class="roadmap__item">• Creating a smart contract</li>
-                  <li class="roadmap__item">• Collection generation</li>
+                  <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Creating a smart contract</li>
+                  <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Collection generation</li>
                 </ul>
               </div>
             </div>
@@ -225,10 +235,10 @@
               <div class="roadmap__content roadmap__content-left">
                 <h3 class="roadmap__content-title">STAGE 3</h3>
                 <ul class="roadmap__list">
-                  <li class="roadmap__item">Marketing movements •</li>
-                  <li class="roadmap__item">Website development •</li>
-                  <li class="roadmap__item">Filling social networks •</li>
-                  <li class="roadmap__item">Community building •</li>
+                  <li class="roadmap__item">Marketing movements <span class="roadmap__item-dot">•</span></li>
+                  <li class="roadmap__item">Website development <span class="roadmap__item-dot">•</span></li>
+                  <li class="roadmap__item">Filling social networks <span class="roadmap__item-dot">•</span></li>
+                  <li class="roadmap__item">Community building <span class="roadmap__item-dot">•</span></li>
                 </ul>
               </div>
             </div>
@@ -240,10 +250,10 @@
                   <label class="roadmap__content-label">CURRENT</label>
                 </div>
                 <ul class="roadmap__list">
-                  <li class="roadmap__item">• Launch of the coinage collection</li>
-                  <li class="roadmap__item">• Development of subsequent animals</li>
-                  <li class="roadmap__item">• Development of tokenomics</li>
-                  <li class="roadmap__item">• Jungle world drawing</li>
+                  <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Launch of the coinage collection</li>
+                  <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Development of subsequent animals</li>
+                  <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Development of tokenomics</li>
+                  <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Jungle world drawing</li>
                 </ul>
               </div>
             </div>
