@@ -6,6 +6,7 @@ const uglify = require("gulp-uglify-es").default;
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
+const gzip = require('gulp-gzip');
 const del = require("del");
 
 function browsersync() {
@@ -32,13 +33,20 @@ function images() {
         }),
       ])
     )
+    // .pipe(gzip())
     .pipe(dest("dist/images"));
 }
 
 function scripts() {
-  return src(["node_modules/jquery/dist/jquery.js", "app/js/main.js", "node_modules/slick-carousel/slick/slick.js"])
+  return src([
+      "node_modules/jquery/dist/jquery.js",
+      "app/js/main.js",
+      "node_modules/slick-carousel/slick/slick.js",
+      "app/js/loader.js"
+    ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
+    // .pipe(gzip())
     .pipe(dest("app/js"))
     .pipe(browserSync.stream());
 }
@@ -53,6 +61,7 @@ function styles() {
         grid: true,
       })
     )
+    // .pipe(gzip())
     .pipe(dest("app/css"))
     .pipe(browserSync.stream());
 }
@@ -63,6 +72,7 @@ function html() {
     collapseWhitespace: true,
     removeComments: true
   }))
+  // .pipe(gzip())
   .pipe(dest("dist"));
 }
 
