@@ -109,6 +109,7 @@
         align-items: center;
         margin-right: 0px;
         margin-left: 24px;
+        margin-top: 10px;
     }
     &__menu-item {
         margin-right: 52px;
@@ -133,7 +134,7 @@
 .project {
     background-image: radial-gradient(farthest-corner at -880px 840px, #3f022e 28.2%, #060608 45%);
     padding-top: 180px;
-    padding-bottom: 180px;
+    padding-bottom: 40px;
     &__video-box {
         width: 100%;
         padding: 10px 10px;
@@ -159,8 +160,8 @@
     }
     &__description-btn {
         margin-top: 80px;
-        width: 128px;
-        height: 56px;
+        width: 192px;
+        height: 84px;
     }
 }
 //animation
@@ -349,8 +350,8 @@
     }
     &__title {
         @extend %main-font;
-        font-size: 96px;
-        line-height: 144px;
+        font-size: 52px;
+        line-height: 78px;
         margin-bottom: 80px;
         text-align: center;
     }
@@ -665,6 +666,9 @@
         margin: 80px;
     }
     .header {
+        &__menu-list {
+            margin-top: 5px;
+        }
         &__menu-item {
             margin-right: 32px;
         }
@@ -678,10 +682,6 @@
     .collection {
         &__slider-sticker {
             margin-left: 120px;
-        }
-        &__description-title {
-            font-size: 42px;
-            line-height: 68px;
         }
         &__img {
             height: 658px;
@@ -735,7 +735,7 @@
         display: block;
     }
     .burger--active {
-        transform: translateY(-80px);
+        transform: translateY(-90px);
     }
     .header {
         margin-top: 40px;
@@ -744,7 +744,7 @@
         }
         &__menu--active {
             display: block;
-            transform: translateY(80px);
+            transform: translateY(30px);
         }
         &__menu-list {
             display: flex;
@@ -770,7 +770,6 @@
     }
     .project {
         padding-top: 100px;
-        padding-bottom: 100px;
         &__video-wrapper {
             margin-left: -100px;
             margin-right: -100px;
@@ -954,6 +953,10 @@
         &__description {
             margin-top: 100px;
         }
+        &__description-btn {
+            width: 172px;
+            height: 74px;
+        }
     }
     .collection {
         &__box {
@@ -1045,16 +1048,15 @@
         }
     }
     .project {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 0;
         &__video {
             height: 578px;
         }
     }
     .collection {
         &__slider-img {
-            width: 137px;
-            height: 137px;
+            width: 152px;
+            height: 152px;
         }
         &__slider-sticker {
             width: 158px;
@@ -1096,6 +1098,9 @@
             width: 170px;
         }
     }
+    .burger {
+        transform: translateY(-10px);
+    }
     .header {
         &__menu-list {
             transform: translateX(-20px);
@@ -1108,7 +1113,6 @@
         }
     }
     .project {
-        padding-top: 60px;
         &__description {
             margin-top: 80px;
         }
@@ -1153,6 +1157,9 @@
     .burger--active {
         transform: translateY(0);
     }
+    .burger {
+        transform: translateY(6px);
+    }
 }
 
 @media (max-width: 500px) {
@@ -1164,6 +1171,7 @@
     }
     .burger {
         margin-top: 6px;
+        transform: translateY(0);
     }
     .home {
         &__animals-images {
@@ -1183,13 +1191,17 @@
         }
     }
     .project {
-        padding-top: 40px;
+        margin-top: -20px;
         &__video-wrapper {
             margin-left: 0;
             margin-right: 0;
         }
         &__video {
             height: 378px;
+        }
+        &__description-title {
+            font-size: 42px;
+            line-height: 68px;
         }
         &__description-text {
             font-size: 16px;
@@ -1226,6 +1238,10 @@
         }
     }
     .rarity {
+        &__title {
+            font-size: 42px;
+            line-height: 68px;
+        }
         &__text {
             width: 90%;
         }
@@ -1236,6 +1252,10 @@
     }
     .value {
         margin-top: 120px;
+        &__title {
+            font-size: 42px;
+            line-height: 68px;
+        }
         &__table {
             padding: 0 80px;
         }
@@ -1249,7 +1269,17 @@
             margin-top: 32px;
         }
     }
+    .roadmap {
+        &__title {
+            font-size: 42px;
+            line-height: 68px;
+        }
+    }
     .team {
+        &-title {
+            font-size: 42px;
+            line-height: 68px;
+        }
         &-founders__list {
             column-gap: 50px;
         }
@@ -1260,6 +1290,10 @@
         &__box {
             margin-left: 0;
             margin-right: 0;
+        }
+        &__main-title {
+            font-size: 42px;
+            line-height: 68px;
         }
         &__list {
             margin-top: 40px;
@@ -1301,9 +1335,13 @@
         &__title {
             line-height: 58px;
         }
+        &__animals-images {
+            margin-left: -80px;
+            margin-right: -80px;
+        }
         &__animals-img-2 {
             width: 350px;
-            height: 350px;
+            height: 406px;
         }
     }
     .project {

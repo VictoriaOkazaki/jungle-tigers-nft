@@ -3,10 +3,14 @@ if ($(window).width() < 500) {
     var firstAnimal = document.querySelector('.home__animals-img-1');
     var lastAnimal = document.querySelector('.home__animals-img-3');
     var currentStage = document.querySelector('.roadmap__content-label');
+    var mintBtn = document.querySelector('.project__description-btn');
+    var connectBtn = document.querySelector('.header__btn-img');
     sticker.remove();
     firstAnimal.remove();
     lastAnimal.remove();
     currentStage.remove();
+    mintBtn.remove();
+    connectBtn.remove();
  }
 
 const burgerSwitch = () => {
