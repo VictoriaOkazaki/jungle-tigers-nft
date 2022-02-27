@@ -237,6 +237,9 @@
         margin-top: -60px;
         position: relative;
     }
+    &__images-mobile {
+        display: none;
+    }
     &__sticker {
         position: absolute;
         right: -50px;
@@ -782,9 +785,9 @@
         }
     }
     .collection {
-        &__box {
-            flex-direction: column;
-        }
+        // &__box {
+        //     flex-direction: column;
+        // }
         &__description {
             margin-right: 0;
             width: 100%;
@@ -802,11 +805,16 @@
             line-height: 78px;
         }
         &__images {
+           display: none;
+        }
+        &__images-mobile {
+            display: block;
             margin-top: 100px;
         }
         &__sticker {
-            bottom: -30px;
-            width: 358px;
+            position: unset;
+            transform: translate3d(500px, -300px, 0);
+            width: 208px;
         }
         &__img {
             height: auto;
@@ -906,8 +914,7 @@
     }
     .collection {
         &__sticker {
-            bottom: -30px;
-            width: 238px;
+            transform: translate3d(400px, -200px, 0);
         }
     }
     .value {
@@ -1016,6 +1023,9 @@
             margin: 24px;
         }
     }
+    .faq .active::after {
+        width: 28px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1063,6 +1073,9 @@
             margin-left: 50px;
             transform: translateY(60px);
         }
+        &__description-text {
+            margin-top: 0;
+        }
     }
     .team {
         &-devs__list {
@@ -1105,9 +1118,6 @@
         &__menu-list {
             transform: translateX(-20px);
         }
-        // &__btn-img {
-        //     width: 161px;
-        // }
         .logo {
             margin-bottom: 24px;
         }
@@ -1122,6 +1132,11 @@
         }
         &__description-btn {
             margin-top: 40px;
+        }
+    }
+    .collection {
+        &__sticker {
+            transform: translate3d(250px, -100px, 0);
         }
     }
     .value {
@@ -1193,6 +1208,7 @@
     .project {
         margin-top: -20px;
         &__video-wrapper {
+            margin-top: 150px;
             margin-left: 0;
             margin-right: 0;
         }
@@ -1228,11 +1244,12 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 36px 86px;
         }
-        &__images {
+        &__images-mobile {
             padding-left: 120px;
             padding-right: 120px;
         }
         &__sticker {
+            transform: translate3d(150px, -100px, 0);
             right: 80px;
             width: 180px;
         }
@@ -1312,6 +1329,9 @@
         &__description-text {
             margin: 20px;
         }
+    }
+    .faq .active::after {
+        width: 21px;
     }
     .footer {
         padding-top: 130px;
