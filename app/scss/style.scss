@@ -437,64 +437,6 @@
         line-height: 26px;
     }
 }
-.team{
-    background-image: radial-gradient(farthest-corner at -380px 640px, #3f022e 28.2%, #060608 45%);
-    margin-top: 200px;
-    text-align: center;
-    &-title {
-        @extend %main-font;
-        font-size: 52px;
-        line-height: 78px;
-    }
-    &-founders {
-        margin-top: 155px;
-    }
-    &-founders__list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        column-gap: 220px;
-    }
-    &__img {
-        border: #2E2D33 3px solid;
-        border-radius: 50%;
-    }
-    &__img-1 {
-        border: #E001A4 3px solid;
-    }
-    &__img-2 {
-        border: $border-color 3px solid;
-    }
-    &__title {
-        @extend %main-font;
-        font-size: 36px;
-        line-height: 57px;
-    }
-    &__text {
-        @extend %second-font;
-        color: rgba(255,255,255, 0.5);
-        font-size: 24px;
-        line-height: 33px;
-        margin-top: 16px;
-    }
-    &-social__list {
-        display: flex;
-        justify-content: center;
-        margin-top: 16px;
-    }
-    &-social__item {
-        margin-right: 16px;
-        margin-top: 26px;
-    }
-    &-devs {
-        margin-top: 120px;
-    }
-    &-devs__list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 45px 85px;
-    }
-}
 .faq {
     background-image: radial-gradient(farthest-corner at 1580px 580px,  #1a0930 28.2%, #060608 45%);
     margin-top: 240px;
@@ -857,18 +799,6 @@
             grid-gap: 50px;
         }
     }
-    .team {
-        &-devs__list {
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 45px 62px;
-        }
-        &__item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    }
     .faq {
         &__main-title,
         &__box {
@@ -943,11 +873,6 @@
             font-size: 28px;
             line-height: 46px;
             margin-top: 38px;
-        }
-    }
-    .team {
-        &-founders__list {
-            column-gap: 110px;
         }
     }
     .faq {
@@ -1093,15 +1018,6 @@
         }
         &__description-text {
             margin-top: 0;
-        }
-    }
-    .team {
-        &-devs__list {
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 45px 62px;
-        }
-        &__text {
-            font-size: 20px;
         }
     }
     .footer {
@@ -1319,15 +1235,6 @@
             line-height: 68px;
         }
     }
-    .team {
-        &-title {
-            font-size: 42px;
-            line-height: 68px;
-        }
-        &-founders__list {
-            column-gap: 50px;
-        }
-    }
     .faq {
         margin-top: 120px;
         &__main-title,
@@ -1407,22 +1314,6 @@
         &__sticker {
             right: 80px;
             width: 130px;
-        }
-    }
-    .team {
-        &-founders {
-            margin-top: 120px;
-        }
-        &-founders__list {
-            flex-direction: column;
-            row-gap: 25px;
-        }
-        &-devs__list {
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 32px;
-        }
-        &__text {
-            font-size: 16px;
         }
     }
 }
