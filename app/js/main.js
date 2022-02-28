@@ -4,12 +4,16 @@ if ($(window).width() < 500) {
     var lastAnimal = document.querySelector('.home__animals-img-3');
     var currentStage = document.querySelector('.roadmap__content-label');
     var mintBtn = document.querySelector('.project__description-btn');
-    var connectBtn = document.querySelector('.header__btn-img');
+    
     sticker.remove();
     firstAnimal.remove();
     lastAnimal.remove();
     currentStage.remove();
     mintBtn.remove();
+    
+ }
+ if ($(window).width() < 550) {
+    var connectBtn = document.querySelector('.header__btn-img');
     connectBtn.remove();
  }
 
@@ -35,6 +39,22 @@ const burgerSwitch = () => {
 };
 
 burgerSwitch();
+
+const backToTop = () => {
+    const backToTop = document.querySelector('.footer__to-top-link');
+    const homeSection = document.getElementById('home');
+
+    backToTop.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        homeSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+
+backToTop();
 
 const accordeon = () => {
     const chItems = document.querySelectorAll('.faq__item');
