@@ -134,7 +134,7 @@
 .project {
     background-image: radial-gradient(farthest-corner at -880px 840px, #3f022e 28.2%, #060608 45%);
     padding-top: 180px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     &__video-box {
         width: 100%;
         padding: 10px 10px;
@@ -164,22 +164,15 @@
         height: 84px;
     }
 }
-//animation
-@keyframes scroll {
-	0% { transform: rotateZ(-3deg) translateX(0); }
-	100% { transform: rotateZ(-3deg) translateX(calc(-100px * 5))}
-}
+
 .collection {
     &__slider {
         position: relative;
-        width: calc(252px * 10);
     }
     &__slider-track {
-        animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(252px * 20);
         display: flex;
         transform: rotateZ(-3deg);
+        
     }
     &__slider-img {
         width: 252px;
@@ -189,6 +182,7 @@
     &__slider-sticker {
         position: absolute;
         margin-left: 220px;
+        transform: translateY(-50px);
     }
 }
 
@@ -292,7 +286,7 @@
         text-align: left;
     }
     &__table-text{
-        @extend %main-font;
+        @extend %main-font-400;
         color: rgba(255,255,255, 0.5);
         font-weight: 400;
         font-size: 16px;
@@ -686,28 +680,20 @@
 }
 
 @media (max-width: 1100px) {
-    // .container-broad {
-    //     margin: 0 40px;
-    // }
     .container {
         margin: 40px;
     }
     .burger {
         display: block;
     }
-    // .burger--active {
-    //     transform: translateY(-90px);
-    // }
     .header {
         margin-top: 40px;
         &__menu {
-            // display: none;
             opacity: 0;
         }
         &__menu--active {
-            transition: opacity 5s;
+            transition: opacity 2s;
             opacity: 1;
-            // transform: translateY(30px);
         }
         &__menu-list {
             display: flex;
@@ -1014,10 +1000,12 @@
         &__slider-sticker {
             width: 158px;
             margin-left: 50px;
-            transform: translateY(60px);
         }
         &__description-text {
             margin-top: 0;
+        }
+        &__box {
+            margin-top: 180px;
         }
     }
     .footer {
@@ -1091,6 +1079,15 @@
         &__box {
             margin-left: 40px;
         }
+    }
+}
+.footer {
+    &__to-top-arrow {
+        width: 20px;
+    }
+    &__to-top-text {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 .header__btn-img--active {

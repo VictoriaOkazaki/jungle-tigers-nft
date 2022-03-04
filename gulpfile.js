@@ -41,8 +41,9 @@ function scripts() {
   return src([
       "node_modules/jquery/dist/jquery.js",
       "app/js/main.js",
-      "node_modules/slick-carousel/slick/slick.js",
-      "app/js/loader.js"
+      "app/js/lib/gsap.min.js",
+      "app/js/loader.js",
+      "app/js/slider.js"
     ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
