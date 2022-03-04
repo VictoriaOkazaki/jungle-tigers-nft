@@ -22,11 +22,13 @@ const mobileAdaptive = () => {
 const burgerSwitch = () => {
     const burger = document.querySelector('.burger');
     const headerMenu = document.querySelector('.header__menu');
-    
+    const containerBroad = document.querySelector('.container-broad');
+
     if ($(window).width() < 1100) {
         burger.addEventListener('click', () => {
             burger.classList.toggle('burger--active');
             headerMenu.classList.toggle('header__menu--active');
+            containerBroad.classList.toggle('container-broad--active');
         })
     }
 };

@@ -27,6 +27,11 @@ body {
 	margin: 0 140px;
 }
 
+.container-broad--active {
+    background-color: $background-color;
+	z-index: 12;
+}
+
 .marked-word {
 	color: #33E9E9;
 	background: none;
