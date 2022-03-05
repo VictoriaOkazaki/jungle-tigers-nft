@@ -1,0 +1,45 @@
+1 часть, второй экран, описание проекта под видео
+Введите текстовое описание проекта (без переноса предложений на новую строку).
+Если вы хотите выделить некоторые слова другим цветом, перейдите во вкладку "Текст", и напишите слева от выбранного слова (или словосочетания) <mark class="marked-word">, а справа напишите </mark>
+
+2 часть, ROADMAP
+Пожалуйста, проводите изменения стадий Roadmap во вкладке "Текст", а не "Визуально".
+
+Стадия, расположенная слева от линии, может быть добавлена таким образом:
+<div class="roadmap-container roadmap__left">
+    <div class="roadmap__content roadmap__content-left">
+        <h3 class="roadmap__content-title">Стадия нечетная</h3>
+        <ul class="roadmap__list">
+            <li class="roadmap__item">Пункт списка <span class="roadmap__item-dot">•</span></li>
+            <li class="roadmap__item">Еще пункт списка <span class="roadmap__item-dot">•</span></li>
+        </ul>
+    </div>
+</div>
+
+Стадия, расположенная справа от линии, может быть добавлена таким образом:
+<div class="roadmap-container roadmap__right">
+    <div class="roadmap__content roadmap__content-right">
+        <h3 class="roadmap__content-title">Стадия четная</h3>
+        <ul class="roadmap__list">
+             <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Пункт списка</li>
+             <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Еще пункт списка</li>
+        </ul>
+    </div>
+</div>
+
+Текущая стадия, обозначенная как CURRENT и отмеченная фиолетовым значком, добавляется так:
+<div class="roadmap-container roadmap__right roadmap-container-4">
+    <div class="roadmap__content roadmap__content-right">
+        <div class="roadmap__content-4">
+            <h3 class="roadmap__content-title roadmap__content-title-4">Стадия текущая</h3>
+            <label class="roadmap__content-label">CURRENT</label>
+        </div>
+        <ul class="roadmap__list">
+             <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Пункт списка</li>
+             <li class="roadmap__item"><span class="roadmap__item-dot">•</span> Еще пункт списка</li>
+        </ul>
+        </div>
+</div>
+
+*Рекомендуется помечать статусом CURRENT четную стадию.
+*Добавлять пункты списка, можно копируя их из шаблона и вставляя на следующую строку.
