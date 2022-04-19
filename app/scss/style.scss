@@ -142,7 +142,7 @@
     }
     &__video {
         width: 100%;
-        height: 720px;
+        // height: 720px;
         object-fit: cover;
     }
     &__description {
@@ -275,7 +275,7 @@
         grid-gap: 24px;
     }
     &__table-img{
-        width: 448px;
+        // width: 448px;
         transform: translateY(-21px);
         border: rgba(255,255,255, 0.5) 2px solid;
     }
